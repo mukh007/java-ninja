@@ -1,6 +1,6 @@
 package streams;
 
-import javafx.util.Pair;
+//import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,14 +39,14 @@ public class Java8Streams {
 
     private static void streamsListToMapTransformation() {
         LOG.info("*******ListToMapTransformation*******");
-        Arrays.asList("a1", "a2", "b1", "c2", "c1")
-                .stream()
-                .filter(s -> s.startsWith("c2"))
-                .map(String::toUpperCase)
-                .sorted()
-                .map(i -> new Pair(i, i.length()))
-                .collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue()))
-                .forEach((k, v) -> System.out.println(k + " = " + v));
+//        Arrays.asList("a1", "a2", "b1", "c2", "c1")
+//                .stream()
+//                .filter(s -> s.startsWith("c2"))
+//                .map(String::toUpperCase)
+//                .sorted()
+//                .map(i -> new Pair(i, i.length()))
+//                .collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue()))
+//                .forEach((k, v) -> System.out.println(k + " = " + v));
     }
 
     private static void streamsMapToMapTransformation() {
